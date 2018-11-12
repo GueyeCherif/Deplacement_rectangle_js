@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rectan</title>
+	<link rel="stylesheet" type="text/css" href="1.css">
+</head>
+<body>
+   <div class="fatt" id="up">
+   	
+   </div>
+
+   <script type="text/javascript">
+   	
+   	var bady = document.querySelector('body');
+      var rect = document.getElementById('up');
+     bady.onkeydown=function()
+     {
+         var touche = event.keyCode;
+         if (touche==38) 
+         {
+            rect.style.top = "10%";
+            setTimeout(function()
+            {
+                rect.style.top = "60%";
+            }, 2000)
+         }
+     }
+ 
+   </script>
+</body>
+</html>
